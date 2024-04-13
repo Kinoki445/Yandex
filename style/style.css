@@ -1,0 +1,454 @@
+@import url(./reset.css);
+
+
+/* NAV */
+.nav {
+    position: relative;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 6.35px;
+    padding-top: 26px;
+}
+
+.nav-img {
+    width: 22px;
+    height: 31px;
+}
+
+.nav-title {
+    font-weight: 900;
+    font-size: 17px;
+    color: #595653;
+    text-transform: uppercase;
+    line-height: 108%;
+}
+
+/* HEADER */
+.header {
+    position: relative;
+    background-color: #E9DED4;
+    background-size: cover;
+    z-index: 1;
+    height: 742px;
+}
+
+.header-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.3;
+    height: 100%;
+    width: 100%;
+}
+
+.header--main {
+    margin-top: 62px;
+    position: relative;
+    z-index: 1000;
+}
+
+.header--main-info {
+    position: absolute;
+    max-width: 542px;
+    margin-top: 62px;
+}
+
+.header-city {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    z-index: 1;
+}
+
+.header--title {
+    font-size: 60px;
+    line-height: 110%;
+    color: #313131;
+    text-transform: uppercase;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+.header--title span {
+    text-align: center;
+}
+
+.header--text {
+    text-align: center;
+    font-size: 18px;
+    line-height: 130%;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.header--buttons {
+    display: flex;
+    gap: 16px;
+    flex-direction: row;
+    justify-content: center
+}
+
+.header--button-item1, .header--button-item2 {
+    max-width: 263px;
+    text-align: center;
+    border-radius: 66px;
+    line-height: 130%;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 20px 49px;
+    transition: all .5s;
+}
+
+.header--button-item1 {
+    background-color: #1F1F1F;
+    color: white;
+}
+
+.header--button-item1:hover {
+    background-color: #FBCE51;
+    color: #1F1F1F;
+}
+
+.header--button-item2 {
+    border: solid 2px #1F1F1F;
+    color: #1F1F1F;
+}
+
+.header--button-item2:hover {
+    background-color: #1F1F1F;
+    color: white;
+}
+
+/* swap-text */
+.swap-text {
+    background-color: #F54932;
+    padding: 18px 0;
+    z-index: 2;
+}
+
+.swap-text-p {
+    line-height: 110%;
+    font-size: 22px;
+    font-family: "Merriweather", serif;
+    color: white;
+    font-weight: 400;
+    white-space: nowrap;
+    animation: marquee 10s infinite linear;
+}
+
+.swap-text-p::after {
+    content: '• Дело помощи утопающим — дело рук самих утопающих! • Шахматы двигают вперед не только культуру, но и экономику ! • Лед тронулся, господа присяжные заседатели !';
+}
+
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-60%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* lesson */
+.lesson {
+    margin-top: 107px;
+    margin-bottom: 64px;
+}
+
+.lesson-main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 64px;
+}
+
+.lesson-text {
+    font-size: 36px;
+    line-height: 135%;
+    color: #313131;
+    text-transform: uppercase;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+}
+
+.lesson-text span {
+    color: #F54932;
+    font-weight: 700;
+}
+
+.lesson-img {
+    border-radius: 50%;
+    width: 394px;
+}
+
+/* INFO */
+.info-main {
+    display: flex;
+    align-items: center;
+    gap: 44px;
+}
+
+.info-img {
+    width: 500px;
+}
+
+.info-table {
+    border-collapse: collapse;
+    width: 704px;
+    margin-top: 60px;
+}
+
+.info-table--tr {
+    border-bottom: 1px solid #D0D0D0;
+}
+
+.info-table--tr:last-child {
+    border: none;
+}
+
+.info-table--disc:last-child span {
+    text-decoration: line-through;
+    text-decoration-color: #F54932;
+}
+
+.info-table--title {
+    font-family: "Golos Text", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    border-right: 1px solid #D0D0D0;
+    padding: 16px 16px 16px 0;
+}
+
+.info-table--disc {
+    padding: 16px 0 16px 16px;
+    font-family: "Golos Text", sans-serif;
+    font-size: 20px;
+    line-height: 120%;
+    font-weight: 600;
+}
+
+.info-text {
+    font-family: "Golos Text", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #3057A2;
+    margin-top: 48px;
+}
+
+/* stages */
+.stages {
+    margin-top: 200px;
+}
+
+.stages-title {
+    font-size: 54px;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    width: 806px;
+    line-height: 120%;
+    position: relative;
+    margin-bottom: 54px;
+    text-transform: uppercase;
+}
+
+.stages-titlesub {
+    font-family: "Golos Text", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 120%;
+    position: absolute;
+    left: 33%;
+    bottom: 10px;
+    color: #3057A2;
+    text-transform: none;
+
+}
+
+.stages-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.block {
+    padding: 20px;
+    text-align: center;
+    background-image: url(../images/bg2.png);
+    display: flex;
+    gap: 16px;
+}
+
+.span-3 {
+    grid-row: span 2;
+}
+
+.span-7 {
+    grid-column: span 2;
+    position: relative;
+}
+
+.span-7 p:last-child {
+    width: 447px;
+}
+
+.span-7 img {
+    position: absolute;
+    top: -70%;
+    bottom: 0;
+    left: 60%;
+}
+
+.stages-number {
+    text-align: center;
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    padding: 10px;
+    font-family: "Golos Text", sans-serif;
+    line-height: 120%;
+    font-weight: 600;
+    color: #313131;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stages-text {
+    font-family: "Golos Text", sans-serif;
+    font-size: 20px;
+    line-height: 120%;
+    font-weight: 500;
+    color: black;
+    text-align: left;
+}
+
+/* slider */
+.slider {
+    margin-top: 200px;
+    margin-bottom: 140px;
+}
+
+.slider-title {
+    font-size: 54px;
+    font-family: "Merriweather", serif;
+    color: #313131;
+}
+
+.slider-button {
+    width: 44px;
+    height: 44px;
+    padding: 10px;
+    color: white;
+    border-radius: 100%;
+    background-color: #313131;
+
+    transition: all .5s;
+}
+
+.slider-button:hover {
+    background-color: #FBCE51;
+}
+
+.slider-list {
+    display: flex;
+    align-items: center;
+}
+
+.mySlides {
+    display: flex;
+    flex-direction: row;
+    gap: 57px;
+    justify-content: space-between;
+    animation: fadeIn 2s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.mySlides-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mySlides-items img {
+    width: 320px;
+    height: 320px;
+}
+
+.status {
+    font-family: "Golos Text", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+
+    margin-top: 4px;
+    margin-bottom: 20px;
+}
+
+.slider-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.slider-list-number {
+    margin: 0 16px;
+}
+
+.name {
+    font-family: "Golos Text", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.more {
+    font-family: "Golos Text", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 12px;
+    border: 1px solid #3057A2;
+    border-radius: 62px;
+    color: #3057A2;
+
+    transition: all .5s;
+}
+
+.more:hover {
+    background-color: #3057A2;
+    color: white;
+}
+
+/* footer */
+.footer {
+    background-color: #E9DED4;
+}
+
+.footer-main p {
+    font-size: 16px;
+    font-family: "Golos Text", sans-serif;
+    line-height: 120%;
+    font-weight: 400;
+    color: rgba(49, 49, 49, 0.6);
+    padding: 40px 0 72px 0;
+}
